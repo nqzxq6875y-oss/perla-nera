@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: #e0e0e0;
+}
+
+/* Animazioni */
+.fade-in { animation: fade 1.2s forwards; opacity: 0; }
+.slide-up { animation: up 1.2s forwards; opacity: 0; }
+
+@keyframes fade { to { opacity: 1; } }
+@keyframes up { from { transform: translateY(40px); } to { transform: translateY(0); opacity: 1; } }
+
+/* Header */
+header {
+    background: #111;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+/* Nav */
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+}
+nav a:hover, nav .active {
+    color: #fff;
+}
+
+/* Hero */
+.hero {
+    padding: 120px 20px;
+    text-align: center;
+}
+
+/* Content */
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Galleria */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 12px;
+    background: #222;
+    border: 1px solid #333;
+    color: #fff;
+}
+
+button {
+    padding: 10px;
+    background: #444;
+    border: none;
+    color: #fff;
+}
+button:hover { background: #666; }
+
+/* Tabella admin */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.admin-table th, .admin-table td {
+    padding: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.admin-table th {
+    background: #111;
+}
+
+.thumb {
+    width: 90px;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: 40px;
+}

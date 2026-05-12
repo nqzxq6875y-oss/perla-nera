@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Contatti - Perla Nera</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="[cdn.jsdelivr.net](https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js)"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+<header>
+    <img src="img/logo.png" class="logo">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="lavori.html">Lavori</a>
+        <a class="active" href="contatti.html">Contatti</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Contattaci</h2>
+
+    <form id="contactForm" class="contact-form">
+        <label>Nome</label>
+        <input type="text" id="cname" required>
+
+        <label>Email</label>
+        <input type="email" id="cemail" required>
+
+        <label>Messaggio</label>
+        <textarea id="cmessage" required></textarea>
+
+        <button type="submit">Invia</button>
+    </form>
+</section>
+
+<footer>© 2026 Perla Nera</footer>
+</body>
+</html>

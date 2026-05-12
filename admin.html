@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Admin - Perla Nera</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="[gstatic.com](https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js)"></script>
+    <script defer src="[gstatic.com](https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js)"></script>
+    <script defer src="[gstatic.com](https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js)"></script>
+    <script defer src="[gstatic.com](https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js)"></script>
+
+    <script defer src="firebase.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+<header>
+    <img src="img/logo.png" class="logo">
+    <nav>
+        <a id="logoutBtn">Logout</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Dashboard Admin</h2>
+
+    <h3>Aggiungi un nuovo lavoro</h3>
+    <form id="workForm" class="contact-form" enctype="multipart/form-data">
+        <label>Titolo del lavoro</label>
+        <input type="text" id="title" required>
+
+        <label>Carica immagine</label>
+        <input type="file" id="imageFile" accept="image/*" required>
+
+        <button type="submit">Aggiungi Lavoro</button>
+    </form>
+
+    <h3>Lavori esistenti</h3>
+
+    <table class="admin-table">
+        <thead>
+            <tr>
+                <th>Immagine</th>
+                <th>Titolo</th>
+                <th>Modifica</th>
+                <th>Elimina</th>
+            </tr>
+        </thead>
+        <tbody id="workTable"></tbody>
+    </table>
+</section>
+
+<footer>© 2026 Perla Nera</footer>
+
+</body>
+</html>
